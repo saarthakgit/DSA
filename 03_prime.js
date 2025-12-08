@@ -21,5 +21,27 @@ function myprime(n){
 // console.log(myprime(5)); //true
 // console.log(myprime(9)); //false
 
+// My approach 2:
+function myprime2(n){
+    if(n<2){
+        return 'neither prime nor composite'
+    }
+    // let status=true
+    for (let i = 2; i <= Math.floor(Math.sqrt(n)); i++) {
+        if(n%i == 0){
+            // status = false
+            return false
+        }
+    }
+    // return status
+     return true
+   
+
+}
+
+console.log(myprime2(1)); //neither nor
+console.log(myprime2(20)); //false
+console.log(myprime2(5)); //true
+
 
 // Ins approach --
