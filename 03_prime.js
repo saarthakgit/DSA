@@ -43,5 +43,5 @@ console.log(myprime2(1)); //neither nor
 console.log(myprime2(20)); //false
 console.log(myprime2(5)); //true
 
-
-// Ins approach --
+// bigO = O(root(n))
+// Ins approach -- same
