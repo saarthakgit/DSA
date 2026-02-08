@@ -2,14 +2,15 @@
 
 class sol:
     def spiral(N):
-        n=N
-        for render in range(1,N+1):
-            for i in range(1,N*2):
-                for j in range(1,N*2):
-                    if(i==1 or i==N*2-1 or j==1 or j==N*2-1):
-                        print(n,end="")
-                    else:
-                        print(" ",end="")
+        for i in range(1,N*2):
+            top = i-1
+            bottom = (N*2-1)-i
+            for j in range(1,N*2):
+                left = j-1
+                right = (N*2-1)-j
+                Value = min(top,bottom,left,right)
+                # if()
+                print(N-Value,end="")
                 
             print()
 
